@@ -52,7 +52,7 @@ public class DogController {
 
 
     @DeleteMapping("/dog/{id}")
-    public DogProps delDog(int id){
+    public DogProps delDog(@PathVariable int id){
         return service.delDogs(id);
     }
 
